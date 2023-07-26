@@ -2,6 +2,7 @@
 
 .postWrapper {
     text-align: left;
+    word-break: break-word;
 }
 
 .postMetadata {
@@ -9,6 +10,43 @@
     display: block;
     background: $backgroundDarker;
     padding: 10px;
+}
+
+.postContents {
+    background-color: $backgroundDarker;
+    padding: 10px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.postContents ul {
+    list-style: none;
+    padding-left: 2em;
+    margin-left: 0.2em;
+    border-left: 3px solid $white;
+    border-radius: 2px;
+}
+
+.postContents ul li {
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+    font-family: $fontCode;
+}
+
+.postContent {
+    text-align: justify;
+}
+
+.postContent pre {
+    text-align: left;
+    word-break: break-word;
+    overflow: auto;
+    white-space: pre-wrap;
+    line-height: 1.4em;
+}
+
+.postContent img {
+    max-width: 100%;
 }
 
 dt, dd {

@@ -29,7 +29,11 @@
         </dl>
     </section>
     {{ end }}
-    <div>
+    <section class="postContents">
+        <h2>Conteúdos</h2>
+        {{ .TableOfContents }}
+    </section>
+    <div class="postContent">
         {{ .Content }}
     </div>
 </div>
